@@ -1,1 +1,1 @@
-# store-management
+web demo at: https://nhom1ooad.w3spaces.com/
