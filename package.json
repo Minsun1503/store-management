@@ -1,0 +1,18 @@
+{
+  "name": "sports-store",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "mongoose": "^7.5.0",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
