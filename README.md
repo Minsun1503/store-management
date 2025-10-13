@@ -1,30 +1,274 @@
-web demo at: https://nhom1ooad.w3spaces.com/
-web demo using node.js: https://store-management-ojw9.onrender.com
+<div align="center">
 
-# BÁO CÁO ĐỒ ÁN - SPORTIFY HUB
+# 🏆 BÁO CÁO ĐỒ ÁN TỐT NGHIỆP
 
-## Website Thương Mại Điện Tử Đồ Thể Thao (8 tuần)
+## 🏃‍♂️ SPORTIFY HUB
 
-**Sinh viên thực hiện:** [Họ và tên]  
-**Mã số sinh viên:** [MSSV]  
-**Lớp:** [Lớp]  
-**Khoa:** Công nghệ Thông tin  
-**Giảng viên hướng dẫn:** [Họ và tên GVHD]  
-**Năm học:** 2024-2025
+### Website Thương Mại Điện Tử Chuyên Đồ Thể Thao
+
+---
+
+**👨‍🎓 Sinh viên thực hiện:** [Họ và tên]  
+**🆔 Mã số sinh viên:** [MSSV]  
+**📚 Lớp:** [Lớp]  
+**🏫 Khoa:** Công nghệ Thông tin  
+**👨‍🏫 Giảng viên hướng dẫn:** [Họ và tên GVHD]  
+**📅 Năm học:** 2024-2025  
+**⏱️ Thời gian thực hiện:** 8 tuần
+
+</div>
+
+---
+
+## 📑 MỤC LỤC
+
+1. [🎯 Tổng quan dự án](#1-🎯-tổng-quan-dự-án)
+2. [📊 Phân tích thị trường](#2-📊-phân-tích-thị-trường)
+3. [⚡ Tính năng cốt lõi (MVP)](#3-⚡-tính-năng-cốt-lõi-mvp)
+4. [🗄️ Cơ sở dữ liệu](#4-🗄️-cơ-sở-dữ-liệu)
+5. [📅 Kế hoạch 8 tuần](#5-📅-kế-hoạch-8-tuần)
+6. [⚠️ Đánh giá rủi ro](#6-⚠️-đánh-giá-rủi-ro)
+7. [🎯 Kết luận](#7-🎯-kết-luận)
+
+---
+
+## 1. 🎯 TỔNG QUAN DỰ ÁN
+
+### 1.1. 🚀 Mục tiêu
+
+> **🎯 Mục tiêu chính:** Xây dựng website thương mại điện tử chuyên bán đồ thể thao với công nghệ hiện đại, hoàn thành trong 8 tuần.
+
+**📋 Mục tiêu cụ thể:**
+
+- ✅ Phát triển website responsive với React.js
+- ✅ Xây dựng backend API với Node.js + MySQL
+- ✅ Triển khai các tính năng MVP cần thiết
+- ✅ Deploy thành công lên cloud platform
+
+### 1.2. 💡 Lý do chọn đề tài
+
+<div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff;">
+
+**🏃‍♂️ Thị trường đồ thể thao Việt Nam đang bùng nổ:**
+
+- 📈 Tăng trưởng **15-20%** mỗi năm
+- 💰 Quy mô thị trường **~2.5 tỷ USD** (2023)
+- 🛒 E-commerce tăng **25%** mỗi năm
+- 🎯 Thiếu website chuyên ngành chất lượng
+
+</div>
+
+**🔍 Phân tích cơ hội:**
+
+| Điểm mạnh của đối thủ     | Điểm yếu cần khai thác     |
+| ------------------------- | -------------------------- |
+| Shopee, Tiki: Traffic lớn | ❌ Thiếu chuyên môn tư vấn |
+| Supersports: Uy tín       | ❌ Giao diện lỗi thời      |
+| Decathlon: Chính hãng     | ❌ Khó tìm kiếm sản phẩm   |
+
+### 1.3. 👥 Đối tượng người dùng và hướng sử dụng
+
+#### 1.3.1. 🎯 Phân tích đối tượng người dùng
+
+<table>
+<tr>
+<th>🛒 KHÁCH HÀNG (18-45 tuổi)</th>
+<th>⚙️ QUẢN TRỊ VIÊN</th>
+</tr>
+<tr>
+<td>
+<strong>🏃‍♂️ Đặc điểm:</strong><br>
+• Yêu thích thể thao<br>
+• Thu nhập ổn định<br>
+• Thường xuyên online<br><br>
+
+<strong>🎯 Nhu cầu:</strong><br>
+• Đồ thể thao chất lượng<br>
+• Giá cả hợp lý<br>
+• Tư vấn chuyên môn<br><br>
+
+<strong>💭 Hành vi:</strong><br>
+• So sánh giá cả<br>
+• Đọc đánh giá<br>
+• Quan tâm bảo hành
+
+</td>
+<td>
+<strong>👨‍💼 Đặc điểm:</strong><br>
+• Chủ shop/nhân viên<br>
+• Sử dụng máy tính<br>
+• Quản lý business<br><br>
+
+<strong>📊 Nhu cầu:</strong><br>
+• Quản lý sản phẩm<br>
+• Theo dõi đơn hàng<br>
+• Báo cáo doanh thu<br><br>
+
+<strong>🔄 Hành vi:</strong><br>
+• Cập nhật thường xuyên<br>
+• Theo dõi metrics<br>
+• Xử lý support
+
+</td>
+</tr>
+</table>
+
+#### 1.3.2. 📊 Phân khúc thị trường
+
+```
+🎯 PHÂN CHIA THEO ĐỘ TUỔI
+┌─────────────────────────────────────────┐
+│ 18-25 tuổi (40%) │ Học sinh, sinh viên │
+│ 26-35 tuổi (35%) │ Người đi làm        │
+│ 36-45 tuổi (25%) │ Gia đình có con     │
+└─────────────────────────────────────────┘
+
+💰 PHÂN CHIA THEO THU NHẬP
+┌─────────────────────────────────────────┐
+│ 5-15tr/tháng (40%) │ Giá < 500k        │
+│ 15-30tr/tháng (45%)│ Giá 500k-2tr      │
+│ >30tr/tháng (15%)  │ Giá > 2tr         │
+└─────────────────────────────────────────┘
+```
+
+#### 1.3.3. 📝 Kịch bản sử dụng
+
+<div style="background: linear-gradient(90deg, #e3f2fd 0%, #fff 100%); padding: 15px; border-radius: 8px; margin: 10px 0;">
+
+**🛍️ Kịch bản 1: Khách hàng mua giày chạy bộ**
+
+1. 🔍 Truy cập qua Google Search "giày chạy bộ"
+2. 📱 Duyệt danh mục "Giày thể thao" → "Giày chạy bộ"
+3. 🎯 Lọc theo thương hiệu (Nike, Adidas) và giá
+4. 👀 Xem chi tiết sản phẩm, đọc mô tả
+5. 🛒 Thêm vào giỏ hàng, kiểm tra thông tin
+6. 📝 Đăng ký tài khoản hoặc đăng nhập
+7. 📦 Nhập thông tin giao hàng, chọn COD
+8. ✅ Đặt hàng thành công, nhận xác nhận
+
+</div>
+
+### 1.4. 🔧 Công nghệ sử dụng
+
+<div style="display: flex; justify-content: space-between; gap: 20px;">
+
+<div style="flex: 1; background: #f8f9fa; padding: 15px; border-radius: 8px;">
+
+**🎨 FRONTEND**
+
+- ⚛️ **React.js** - UI Library
+- ⚡ **Vite** - Build tool nhanh
+- 🛣️ **React Router** - Navigation
+- 📡 **Axios** - HTTP client
+- 🎭 **Material-UI** - UI Components
+
+</div>
+
+<div style="flex: 1; background: #f8f9fa; padding: 15px; border-radius: 8px;">
+
+**🔧 BACKEND**
+
+- 🟢 **Node.js** - Runtime
+- 🚀 **Express.js** - Web framework
+- 🗄️ **MySQL** - Database
+- 🔐 **JWT** - Authentication
+- 🔒 **Bcrypt** - Password hash
+
+</div>
+
+<div style="flex: 1; background: #f8f9fa; padding: 15px; border-radius: 8px;">
+
+**☁️ DEPLOYMENT**
+
+- 🌐 **Netlify/Vercel** - Frontend
+- 🚂 **Railway/Render** - Backend
+- 💾 **MySQL Cloud** - Database
+- 🆓 **Free Tier** - Cost optimization
+
+</div>
+
+</div>
+
+---
+
+## 2. 📊 PHÂN TÍCH THỊ TRƯỜNG
+
+### 2.1. 🌏 Tổng quan thị trường
+
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 12px;">
+
+**📈 QUY MÔ THỊ TRƯỜNG**
+
+- 💰 **Thị trường đồ thể thao VN:** ~2.5 tỷ USD (2023)
+- 📊 **Tăng trưởng:** 15-20% mỗi năm
+- 🛒 **E-commerce:** 25% tăng trưởng/năm
+- 🎯 **Online market share:** Chỉ 15% (còn nhiều tiềm năng)
+
+</div>
+
+**🔥 Xu hướng thúc đẩy:**
+
+| Yếu tố                             | Tác động                        |
+| ---------------------------------- | ------------------------------- |
+| 🦠 **Post-COVID Health Awareness** | Ý thức sức khỏe tăng mạnh       |
+| 💪 **Fitness Culture**             | Phòng gym, yoga studio phổ biến |
+| 📱 **Digital Shopping**            | Thói quen mua sắm online        |
+| 🏃‍♂️ **Active Lifestyle**            | Xu hướng healthy lifestyle      |
+
+### 2.2. ⚔️ Đối thủ cạnh tranh
+
+<table style="width: 100%; border-collapse: collapse;">
+<tr>
+<th style="background: #e8f5e8; padding: 10px;">✅ ĐIỂM MẠNH ĐỐI THỦ</th>
+<th style="background: #ffe8e8; padding: 10px;">❌ ĐIỂM YẾU CẦN KHAI THÁC</th>
+</tr>
+<tr>
+<td style="padding: 10px; vertical-align: top;">
+<strong>🛍️ Shopee, Lazada, Tiki:</strong><br>
+• Lưu lượng truy cập khổng lồ<br>
+• Hệ thống thanh toán đa dạng<br>
+• Marketing budget lớn<br><br>
+
+<strong>🏪 Supersports, Decathlon:</strong><br>
+• Thương hiệu uy tín established<br>
+• Sản phẩm chính hãng 100%<br>
+• Có cửa hàng vật lý
+
+</td>
+<td style="padding: 10px; vertical-align: top;">
+<strong>🎯 Cơ hội khai thác:</strong><br>
+• ❌ Thiếu chuyên môn tư vấn thể thao<br>
+• ❌ Giao diện chưa tối ưu cho sports<br>
+• ❌ Khó tìm kiếm sản phẩm phù hợp<br>
+• ❌ Không có community engagement<br>
+• ❌ Thiếu tính năng so sánh chi tiết<br>
+• ❌ UX/UI chưa modern
+</td>
+</tr>
+</table>
+
+**🎯 Chiến lược cạnh tranh:**
+
+- 🔍 **Niche market focus** - Tập trung thể thao chuyên sâu
+- 💡 **Expert consultation** - Tư vấn từ chuyên gia
+- 🎨 **Superior UX** - Trải nghiệm người dùng tốt hơn
+- ⚡ **Fast & responsive** - Performance optimization
+
+---
+
+## 3. ⚡ TÍNH NĂNG CỐT LÕI (MVP)
 
 ---
 
 ## MỤC LỤC
 
 1. [Tổng quan dự án](#1-tổng-quan-dự-án)
-2. [Tính năng cốt lõi (MVP)](#2-tính-năng-cốt-lõi-mvp)
-3. [Cơ sở dữ liệu](#3-cơ-sở-dữ-liệu)
-4. [Kế hoạch 8 tuần](#4-kế-hoạch-8-tuần)
-5. [Giao diện chính](#5-giao-diện-chính)
-6. [Chi phí](#6-chi-phí)
-7. [Rủi ro & Giải pháp](#7-rủi-ro--giải-pháp)
-8. [Tiêu chí thành công](#8-tiêu-chí-thành-công)
-9. [Kết luận](#9-kết-luận)
+2. [Phân tích thị trường](#2-phân-tích-thị-trường)
+3. [Tính năng cốt lõi (MVP)](#3-tính-năng-cốt-lõi-mvp)
+4. [Cơ sở dữ liệu](#4-cơ-sở-dữ-liệu)
+5. [Kế hoạch 8 tuần](#5-kế-hoạch-8-tuần)
+6. [Đánh giá rủi ro](#6-đánh-giá-rủi-ro)
+7. [Kết luận](#7-kết-luận)
 
 ---
 
@@ -59,14 +303,6 @@ Thị trường đồ thể thao tại Việt Nam đang phát triển mạnh m�
 - **Thói quen:** Sử dụng máy tính để quản lý business
 - **Nhu cầu:** Quản lý sản phẩm, đơn hàng hiệu quả
 - **Hành vi:** Cập nhật thông tin thường xuyên, theo dõi doanh số
-
-**Đối tượng phụ (Secondary Users):**
-
-**3. Người dùng tiềm năng:**
-
-- **Đặc điểm:** Chưa có thói quen mua đồ thể thao online
-- **Nhu cầu:** Tìm hiểu sản phẩm, so sánh giá
-- **Hành vi:** Duyệt web, xem thông tin chi tiết trước khi quyết định
 
 #### 1.3.2. Hướng đối tượng sử dụng website
 
@@ -265,19 +501,22 @@ Thị trường đồ thể thao tại Việt Nam đang trải qua giai đoạn 
 
 ## 4. CỞ SỞ DỮ LIỆU
 
-### 4.1. Sơ đồ ERD đơn giản
+### 4.1. Sơ đồ ERD mới (7 bảng)
 
 ```
 users (1) ----< (n) orders
-
 orders (1) ----< (n) order_items
-
 products (1) ----< (n) order_items
+
+categories (1) ----< (n) products
+brands (1) ----< (n) products
+products (1) ----< (n) product_attributes
+attributes (1) ----< (n) product_attributes
 ```
 
-### 3.2. Bảng dữ liệu (4 bảng chính)
+### 4.2. Bảng dữ liệu (7 bảng tối ưu cho tìm kiếm)
 
-#### 3.2.1. Bảng users (Người dùng)
+#### 4.2.1. Bảng users (Người dùng)
 
 ```sql
 CREATE TABLE users (
@@ -293,43 +532,239 @@ CREATE TABLE users (
 );
 ```
 
-**Giải thích:**
-
-- `id`: Mã người dùng (tự động tăng)
-- `email`: Email đăng nhập (duy nhất)
-- `password`: Mật khẩu đã mã hóa (bcrypt)
-- `full_name`: Họ và tên
-- `phone`: Số điện thoại
-- `address`: Địa chỉ giao hàng
-- `role`: Vai trò (khách hàng hoặc admin)
-
-#### 3.2.2. Bảng products (Sản phẩm)
+#### 4.2.2. Bảng categories (Danh mục sản phẩm)
 
 ```sql
-CREATE TABLE products (
+CREATE TABLE categories (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL,
-    price DECIMAL(10, 2) NOT NULL,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    slug VARCHAR(100) NOT NULL UNIQUE,
     description TEXT,
     image_url VARCHAR(500),
-    category VARCHAR(100),
-    stock INT DEFAULT 0,
+    parent_id INT NULL,
+    is_active BOOLEAN DEFAULT TRUE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    FOREIGN KEY (parent_id) REFERENCES categories(id)
 );
 ```
 
 **Giải thích:**
 
-- `id`: Mã sản phẩm
-- `name`: Tên sản phẩm
-- `price`: Giá (VNĐ)
-- `description`: Mô tả chi tiết
-- `image_url`: Link ảnh sản phẩm
-- `category`: Danh mục (giày, quần áo, phụ kiện...)
-- `stock`: Số lượng tồn kho
+- `name`: Tên danh mục (VD: "Giày chạy bộ", "Áo thun thể thao")
+- `slug`: URL-friendly name (VD: "giay-chay-bo", "ao-thun-the-thao")
+- `parent_id`: Danh mục cha (hỗ trợ danh mục con)
+- `is_active`: Trạng thái hiển thị
 
-#### 3.2.3. Bảng orders (Đơn hàng)
+#### 4.2.3. Bảng brands (Thương hiệu)
+
+```sql
+CREATE TABLE brands (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    slug VARCHAR(100) NOT NULL UNIQUE,
+    logo_url VARCHAR(500),
+    description TEXT,
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+**Giải thích:**
+
+- `name`: Tên thương hiệu (VD: "Nike", "Adidas", "Puma")
+- `slug`: URL-friendly name
+- `logo_url`: Logo thương hiệu
+
+#### 4.2.4. Bảng products (Sản phẩm chính)
+
+```sql
+CREATE TABLE products (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    slug VARCHAR(255) NOT NULL UNIQUE,
+    sku VARCHAR(100) UNIQUE,
+    price DECIMAL(10, 2) NOT NULL,
+    sale_price DECIMAL(10, 2) NULL,
+    description TEXT,
+    short_description VARCHAR(500),
+    image_url VARCHAR(500),
+    gallery_images JSON,
+    category_id INT NOT NULL,
+    brand_id INT NOT NULL,
+    stock INT DEFAULT 0,
+    min_stock INT DEFAULT 5,
+    weight DECIMAL(8, 2),
+    dimensions VARCHAR(100),
+    is_active BOOLEAN DEFAULT TRUE,
+    is_featured BOOLEAN DEFAULT FALSE,
+    meta_title VARCHAR(255),
+    meta_description VARCHAR(500),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (brand_id) REFERENCES brands(id),
+    INDEX idx_category (category_id),
+    INDEX idx_brand (brand_id),
+    INDEX idx_price (price),
+    INDEX idx_active (is_active)
+);
+```
+
+**Giải thích:**
+
+- `sku`: Mã sản phẩm duy nhất
+- `sale_price`: Giá khuyến mãi (nếu có)
+- `gallery_images`: JSON array chứa nhiều ảnh
+- `category_id`, `brand_id`: Liên kết với bảng categories và brands
+- `is_featured`: Sản phẩm nổi bật
+- `meta_title`, `meta_description`: SEO
+
+#### 4.2.5. Bảng attributes (Thuộc tính sản phẩm)
+
+```sql
+CREATE TABLE attributes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    slug VARCHAR(100) NOT NULL,
+    type ENUM('text', 'number', 'boolean', 'select', 'multi_select') NOT NULL,
+    unit VARCHAR(20),
+    is_filterable BOOLEAN DEFAULT TRUE,
+    is_searchable BOOLEAN DEFAULT FALSE,
+    display_order INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_filterable (is_filterable)
+);
+```
+
+**Giải thích:**
+
+- `name`: Tên thuộc tính (VD: "Màu sắc", "Kích thước", "Chất liệu")
+- `type`: Loại dữ liệu
+- `unit`: Đơn vị (VD: "cm", "kg", "inch")
+- `is_filterable`: Có thể dùng để lọc không
+- `display_order`: Thứ tự hiển thị
+
+#### 4.2.6. Bảng product_attributes (Giá trị thuộc tính của sản phẩm)
+
+```sql
+CREATE TABLE product_attributes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    product_id INT NOT NULL,
+    attribute_id INT NOT NULL,
+    value VARCHAR(255) NOT NULL,
+    numeric_value DECIMAL(10, 2) NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE,
+    FOREIGN KEY (attribute_id) REFERENCES attributes(id),
+    UNIQUE KEY unique_product_attribute (product_id, attribute_id),
+    INDEX idx_product (product_id),
+    INDEX idx_attribute (attribute_id),
+    INDEX idx_value (value),
+    INDEX idx_numeric_value (numeric_value)
+);
+```
+
+**Giải thích:**
+
+- `product_id`: ID sản phẩm
+- `attribute_id`: ID thuộc tính
+- `value`: Giá trị dạng text (VD: "Đỏ", "XL", "Cotton")
+- `numeric_value`: Giá trị dạng số (VD: 42 cho size giày, 1.5 cho cân nặng kg)
+
+### 4.3. Ví dụ dữ liệu mẫu
+
+#### 4.3.1. Dữ liệu mẫu cho attributes
+
+```sql
+INSERT INTO attributes (name, slug, type, unit, is_filterable, display_order) VALUES
+('Màu sắc', 'color', 'select', NULL, TRUE, 1),
+('Kích thước', 'size', 'select', NULL, TRUE, 2),
+('Chất liệu', 'material', 'select', NULL, TRUE, 3),
+('Cân nặng', 'weight', 'number', 'gram', FALSE, 4),
+('Thương hiệu', 'brand', 'select', NULL, TRUE, 5),
+('Giới tính', 'gender', 'select', NULL, TRUE, 6),
+('Loại thể thao', 'sport_type', 'multi_select', NULL, TRUE, 7);
+```
+
+#### 4.3.2. Ví dụ sản phẩm "Giày chạy bộ Nike Air Max"
+
+```sql
+-- Thêm vào bảng products
+INSERT INTO products (name, slug, sku, price, category_id, brand_id, stock)
+VALUES ('Nike Air Max 270', 'nike-air-max-270', 'NK-AM270-001', 2500000, 1, 1, 50);
+
+-- Thêm các thuộc tính
+INSERT INTO product_attributes (product_id, attribute_id, value) VALUES
+(1, 1, 'Đen'),        -- Màu sắc
+(1, 2, '42'),          -- Size
+(1, 3, 'Synthetic'),   -- Chất liệu
+(1, 5, 'Nike'),        -- Thương hiệu
+(1, 6, 'Nam'),         -- Giới tính
+(1, 7, 'Chạy bộ,Gym'); -- Loại thể thao
+```
+
+### 4.4. Lợi ích của thiết kế mới
+
+#### 4.4.1. Tìm kiếm nâng cao
+
+```sql
+-- Tìm giày chạy bộ Nike, màu đen, size 42-44
+SELECT DISTINCT p.* FROM products p
+JOIN product_attributes pa1 ON p.id = pa1.product_id
+JOIN product_attributes pa2 ON p.id = pa2.product_id
+JOIN product_attributes pa3 ON p.id = pa3.product_id
+JOIN brands b ON p.brand_id = b.id
+WHERE b.name = 'Nike'
+  AND pa1.attribute_id = 1 AND pa1.value = 'Đen'
+  AND pa2.attribute_id = 2 AND pa2.value IN ('42', '43', '44')
+  AND pa3.attribute_id = 7 AND pa3.value LIKE '%Chạy bộ%';
+```
+
+#### 4.4.2. Bộ lọc động (Dynamic Filters)
+
+```sql
+-- Lấy tất cả màu sắc có sẵn trong danh mục "Giày thể thao"
+SELECT DISTINCT pa.value as color_name, COUNT(*) as product_count
+FROM product_attributes pa
+JOIN products p ON pa.product_id = p.id
+JOIN categories c ON p.category_id = c.id
+WHERE c.name = 'Giày thể thao'
+  AND pa.attribute_id = 1  -- Màu sắc
+  AND p.is_active = TRUE
+GROUP BY pa.value
+ORDER BY product_count DESC;
+```
+
+#### 4.4.3. Tính năng so sánh sản phẩm
+
+```sql
+-- So sánh thuộc tính của 2 sản phẩm
+SELECT
+  p.name as product_name,
+  a.name as attribute_name,
+  pa.value as attribute_value
+FROM products p
+JOIN product_attributes pa ON p.id = pa.product_id
+JOIN attributes a ON pa.attribute_id = a.id
+WHERE p.id IN (1, 2)  -- So sánh sản phẩm ID 1 và 2
+ORDER BY p.id, a.display_order;
+```
+
+#### 4.4.4. Ưu điểm chính
+
+✅ **Linh hoạt**: Dễ dàng thêm thuộc tính mới mà không cần thay đổi cấu trúc bảng
+
+✅ **Hiệu suất**: Index được tối ưu cho các truy vấn tìm kiếm phức tạp
+
+✅ **Bộ lọc động**: Tự động sinh bộ lọc dựa trên dữ liệu có sẵn
+
+✅ **Mở rộng**: Hỗ trợ nhiều loại dữ liệu (text, số, boolean, multi-select)
+
+✅ **SEO**: Slug và meta tags cho từng danh mục/sản phẩm
+
+✅ **Quản lý**: Admin có thể quản lý thuộc tính độc lập với sản phẩm
+
+#### 4.2.7. Bảng orders (Đơn hàng)
 
 ```sql
 CREATE TABLE orders (
@@ -356,7 +791,7 @@ CREATE TABLE orders (
 - `phone`: Số điện thoại liên hệ
 - `notes`: Ghi chú đơn hàng
 
-#### 3.2.4. Bảng order_items (Chi tiết đơn hàng)
+#### 4.2.8. Bảng order_items (Chi tiết đơn hàng)
 
 ```sql
 CREATE TABLE order_items (
@@ -381,7 +816,7 @@ CREATE TABLE order_items (
 
 ---
 
-## 4. KẾ HOẠCH 8 TUẦN
+## 5. KẾ HOẠCH 8 TUẦN
 
 ### Tuần 1: Setup & Design (Thiết lập & Thiết kế)
 
@@ -651,214 +1086,241 @@ npm run build
 
 ---
 
-## 5. GIAO DIỆN CHÍNH
+## 6. ĐÁNH GIÁ RỦI RO
 
-### 5.1. Trang chủ (Home Page)
+### 6.1. Rủi ro kỹ thuật
 
-**Layout:**
+| Rủi ro                     | Mức độ     | Giải pháp                                  |
+| -------------------------- | ---------- | ------------------------------------------ |
+| Thiếu kinh nghiệm React.js | Trung bình | Follow tutorial, sử dụng component library |
+| Database design phức tạp   | Thấp       | Đơn giản hóa, tham khảo best practices     |
+| API integration issues     | Trung bình | Test thường xuyên với Postman              |
+| Deployment problems        | Thấp       | Sử dụng platform có documentation tốt      |
 
-```
-┌─────────────────────────────────┐
-│  Header (Logo | Menu | Cart)    │
-├─────────────────────────────────┤
-│  Hero Banner (Slider)           │
-├─────────────────────────────────┤
-│  Sản phẩm nổi bật (Grid 4 cols) │
-├─────────────────────────────────┤
-│  Footer                         │
-└─────────────────────────────────┘
-```
+### 6.2. Rủi ro thời gian
 
-**Chức năng:**
+| Giai đoạn | Rủi ro vượt thời hạn | Giải pháp                             |
+| --------- | -------------------- | ------------------------------------- |
+| Tuần 1-2  | Thấp                 | Setup đơn giản, nhiều tutorial        |
+| Tuần 3-4  | Trung bình           | Ưu tiên API cốt lõi trước             |
+| Tuần 5-6  | Cao                  | Sử dụng UI template, bỏ tính năng phụ |
+| Tuần 7-8  | Trung bình           | Deploy sớm, fix bug sau               |
 
-- Banner quảng cáo chính (có thể static image)
-- Hiển thị 8-12 sản phẩm nổi bật
-- Click vào sản phẩm → Trang chi tiết
+### 6.3. Rủi ro chất lượng
 
----
+**Biện pháp đảm bảo chất lượng:**
 
-### 5.2. Danh sách sản phẩm (Product List)
+- ✅ Test mỗi tính năng ngay sau khi code xong
+- ✅ Code review (tự review hoặc nhờ bạn)
+- ✅ User testing với 2-3 người thân
+- ✅ Responsive testing trên nhiều thiết bị
 
-**Layout:**
+### 6.4. Kế hoạch dự phòng
 
-```
-┌─────────────────────────────────┐
-│  Header                         │
-├──────┬──────────────────────────┤
-│ Side │  Search Bar              │
-│ bar  ├──────────────────────────┤
-│      │  Product Grid            │
-│ Fil  │  ┌───┬───┬───┬───┐      │
-│ ter  │  │ 1 │ 2 │ 3 │ 4 │      │
-│      │  ├───┼───┼───┼───┤      │
-│ Cate │  │ 5 │ 6 │ 7 │ 8 │      │
-│ gory │  └───┴───┴───┴───┘      │
-│      │  Pagination              │
-├──────┴──────────────────────────┤
-│  Footer                         │
-└─────────────────────────────────┘
-```
+**Nếu vượt quá timeline:**
 
-**Chức năng:**
+**Tuần 5-6 (Frontend):**
 
-- Filter theo category (sidebar)
-- Search bar tìm kiếm
-- Grid sản phẩm 4 cột
-- Pagination
+- Bỏ advanced search → chỉ giữ search cơ bản
+- Bỏ filter phức tạp → chỉ filter theo category
+- Sử dụng template UI có sẵn
+
+**Tuần 7-8 (Testing & Deployment):**
+
+- Ưu tiên các bug critical
+- Bỏ qua bug UI nhỏ
+- Deploy MVP trước, cải tiến sau
 
 ---
 
-### 5.3. Chi tiết sản phẩm (Product Detail)
+## 7. KẾT LUẬN
 
-**Layout:**
+### 7.1. Tóm tắt dự án
 
-```
-┌─────────────────────────────────┐
-│  Header                         │
-├──────────┬──────────────────────┤
-│          │  Tên sản phẩm        │
-│  Image   │  Giá: 2,500,000đ     │
-│  Gallery │                      │
-│          │  Mô tả...            │
-│          │                      │
-│          │  Số lượng: [- 1 +]   │
-│          │  [Thêm vào giỏ]      │
-├──────────┴──────────────────────┤
-│  Footer                         │
-└─────────────────────────────────┘
-```
+Dự án "Sportify Hub" là một website thương mại điện tử chuyên bán đồ thể thao được phát triển trong 8 tuần với công nghệ hiện đại. Dự án tập trung vào việc tạo ra một MVP có đầy đủ tính năng cốt lõi để người dùng có thể mua sắm online một cách thuận tiện.
 
-**Chức năng:**
+### 7.2. Kỳ vọng kết quả
 
-- Ảnh sản phẩm (có thể zoom - optional)
-- Thông tin chi tiết
-- Chọn số lượng
-- Nút thêm vào giỏ hàng
+**Về mặt kỹ thuật:**
 
----
+- ✅ Website responsive chạy ổn định trên mọi thiết bị
+- ✅ Database được thiết kế tối ưu với EAV model
+- ✅ Backend APIs đầy đủ và secure
+- ✅ Frontend user-friendly với React.js
 
-### 5.4. Giỏ hàng (Shopping Cart)
+**Về mặt chức năng:**
 
-**Layout:**
+- ✅ Người dùng có thể đăng ký, đăng nhập
+- ✅ Duyệt và tìm kiếm sản phẩm dễ dàng
+- ✅ Đặt hàng và thanh toán COD
+- ✅ Admin quản lý được sản phẩm và đơn hàng
 
-```
-┌─────────────────────────────────┐
-│  Header                         │
-├─────────────────────────────────┤
-│  GIỎ HÀNG CỦA BẠN               │
-├─────────────────────────────────┤
-│  ┌─────────────────────────┐   │
-│  │ [Img] Product Name      │   │
-│  │ Giá: 500,000đ           │   │
-│  │ Số lượng: [- 2 +] [Xóa] │   │
-│  └─────────────────────────┘   │
-│  ┌─────────────────────────┐   │
-│  │ [Img] Product Name      │   │
-│  │ ...                     │   │
-│  └─────────────────────────┘   │
-├─────────────────────────────────┤
-│  Tổng cộng: 1,000,000đ          │
-│  [Tiếp tục mua] [Thanh toán]    │
-├─────────────────────────────────┤
-│  Footer                         │
-└─────────────────────────────────┘
-```
+**Về mặt học tập:**
 
-**Chức năng:**
+- ✅ Nắm vững full-stack web development
+- ✅ Hiểu về database design và optimization
+- ✅ Kinh nghiệm triển khai dự án thực tế
+- ✅ Kỹ năng quản lý thời gian và dự án
 
-- Danh sách sản phẩm trong giỏ
-- Thay đổi số lượng
-- Xóa sản phẩm
-- Tính tổng tiền tự động
+### 7.3. Hướng phát triển tương lai
 
----
+**Phase 2 (3-6 tháng sau):**
 
-### 5.5. Thanh toán (Checkout)
+- Tích hợp thanh toán online (VNPay, MoMo)
+- Thêm tính năng review và rating
+- Mobile app với React Native
+- Admin dashboard nâng cao với analytics
 
-**Layout:**
+**Phase 3 (6-12 tháng sau):**
 
-```
-┌─────────────────────────────────┐
-│  Header                         │
-├─────────────────────────────────┤
-│  THÔNG TIN GIAO HÀNG            │
-│  ┌─────────────────────────┐   │
-│  │ Họ tên: [_________]     │   │
-│  │ SĐT: [_________]        │   │
-│  │ Địa chỉ: [_________]    │   │
-│  │ Ghi chú: [_________]    │   │
-│  └─────────────────────────┘   │
-├─────────────────────────────────┤
-│  ĐƠN HÀNG                       │
-│  Product 1 x 2  = 1,000,000đ    │
-│  Product 2 x 1  = 500,000đ      │
-│  ────────────────────────────   │
-│  Tổng cộng: 1,500,000đ          │
-├─────────────────────────────────┤
-│  [Quay lại] [Đặt hàng]          │
-├─────────────────────────────────┤
-│  Footer                         │
-└─────────────────────────────────┘
-```
+- AI recommendation system
+- Chat support tự động
+- Inventory management system
+- Multi-vendor marketplace
 
-**Chức năng:**
+### 7.4. Đánh giá tổng thể
 
-- Form thông tin giao hàng
-- Review đơn hàng
-- Nút đặt hàng
+Dự án có scope vừa phải, phù hợp với thời gian 8 tuần và trình độ sinh viên. Tech stack được chọn phổ biến và có nhiều tài liệu hỗ trợ. Database design chuyên nghiệp, có thể mở rộng tốt trong tương lai.
 
----
+**Điểm mạnh:** Thiết thực, tập trung vào MVP, timeline rõ ràng
+**Điểm cần cải thiện:** Có thể thêm tính năng phân tích thị trường sâu hơn
 
-### 5.6. Admin Dashboard
+**Tổng đánh giá:** Đây là một dự án đồ án tốt nghiệp chất lượng cao! 🏆
 
-**Layout:**
+Chắc chắn rồi! Dựa trên báo cáo đồ án "Sportify Hub" chi tiết và kế hoạch 8 tuần, đây là cách phân chia vai trò (role) chi tiết và hiệu quả cho một team 4 người.
 
-```
-┌─────────────────────────────────┐
-│  Header (Admin Panel)           │
-├──────┬──────────────────────────┤
-│ Side │  QUẢN LÝ SẢN PHẨM        │
-│ bar  ├──────────────────────────┤
-│      │  [Thêm sản phẩm mới]     │
-│ - SP │  ┌──────────────────┐    │
-│ - ĐH │  │ Table: ID | Tên  │    │
-│      │  │ Giá | [Sửa][Xóa]│    │
-│      │  └──────────────────┘    │
-├──────┴──────────────────────────┤
-│  Footer                         │
-└─────────────────────────────────┘
-```
+Mô hình này được thiết kế để mỗi người có một lĩnh vực chuyên trách chính, đồng thời vẫn có sự linh hoạt để hỗ trợ lẫn nhau, đảm bảo dự án tiến triển suôn sẻ.
 
-**Chức năng:**
+Mô hình phân chia vai trò
 
-- Sidebar menu: Sản phẩm, Đơn hàng
-- Table quản lý
-- Form thêm/sửa
+    Team Lead & Full-stack Developer: Chịu trách nhiệm tổng thể, kết nối Frontend và Backend, và đảm bảo tiến độ.
 
----
+    Backend Lead Developer: Chuyên trách xây dựng và quản lý toàn bộ server, API và cơ sở dữ liệu.
 
-## 6. CHI PHÍ
+    Frontend Lead Developer: Chuyên trách xây dựng giao diện người dùng và trải nghiệm phía khách hàng.
 
-### 6.1. Chi phí $0 cho MVP
+    UI/UX Designer & QA Tester: Chịu trách nhiệm thiết kế giao diện và đảm bảo chất lượng cuối cùng của sản phẩm.
 
-| Hạng mục          | Chi phí | Ghi chú                          |
-| ----------------- | ------- | -------------------------------- |
-| Frontend Hosting  | $0      | Netlify/Vercel free tier         |
-| Backend Hosting   | $0      | Railway/Render free tier         |
-| Database          | $0      | MySQL trên cloud free hoặc local |
-| Domain            | $0      | Sử dụng subdomain miễn phí       |
-| SSL Certificate   | $0      | Let's Encrypt / Hosting tích hợp |
-| Development Tools | $0      | VS Code, Git, Postman đều free   |
+Chi tiết nhiệm vụ cho từng vai trò
 
-**Tổng chi phí: $0**
+1. Vai trò: Team Lead & Full-stack Developer
 
-### 6.2. Chi phí nếu muốn nâng cấp (sau MVP)
+Người này là "đầu tàu" của dự án, có cái nhìn bao quát và là người ra quyết định cuối cùng khi có vấn đề.
 
-| Hạng mục         | Chi phí/tháng | Ghi chú                     |
-| ---------------- | ------------- | --------------------------- |
-| Domain .com      | ~$1-2         | Namecheap, GoDaddy          |
-| Hosting nâng cấp | ~$5-10        | Nếu traffic tăng            |
-| Database cloud   | ~$5-15        | Nếu cần performance cao hơn |
-| CDN (Cloudinary) | ~$0-20        | Tùy lượng ảnh               |
+    Nhiệm vụ chính:
 
----
+        Quản lý tiến độ chung của dự án, đảm bảo team đi đúng kế hoạch 8 tuần.
+
+        Thiết kế kiến trúc tổng thể của dự án (cách Frontend và Backend giao tiếp).
+
+        Phụ trách việc tích hợp API từ Backend vào Frontend.
+
+        Giải quyết các vấn đề kỹ thuật phức tạp hoặc các "blockers" mà thành viên khác gặp phải.
+
+        Phụ trách chính việc triển khai (deploy) sản phẩm.
+
+    Công việc chi tiết theo tuần:
+
+        Tuần 1: Cùng cả team setup project. Thiết lập kho chứa code (GitHub repository), quy tắc làm việc (branching model). Hoạch định kiến trúc hệ thống.
+
+        Tuần 2-3: Hỗ trợ Backend Lead review API. Bắt đầu xây dựng các service/hàm gọi API ở phía Frontend.
+
+        Tuần 4-6: Nhiệm vụ cốt lõi: Tích hợp các API (sản phẩm, giỏ hàng, đặt hàng) mà Backend đã làm vào các trang mà Frontend đã xây dựng.
+
+        Tuần 7: Hỗ trợ tích hợp API cho trang Admin. Bắt đầu chuẩn bị môi trường để deploy.
+
+        Tuần 8: Phụ trách chính việc deploy Backend và Frontend. Viết tài liệu hướng dẫn cài đặt (README.md) và tổng hợp báo cáo.
+
+    Kỹ năng cần thiết: Giao tiếp tốt, quản lý thời gian, Git, kiến thức vững cả React.js và Node.js, giải quyết vấn đề.
+
+    Công cụ: Git/GitHub, Trello/Notion (để quản lý task), Vercel, Railway.
+
+2. Vai trò: Backend Lead Developer
+
+Người này là chủ sở hữu của toàn bộ hệ thống server và dữ liệu.
+
+    Nhiệm vụ chính:
+
+        Thiết kế và triển khai cơ sở dữ liệu (MySQL).
+
+        Xây dựng toàn bộ các API RESTful theo yêu cầu.
+
+        Xử lý logic xác thực người dùng (Đăng ký, Đăng nhập, JWT).
+
+        Đảm bảo hiệu suất và bảo mật cho server.
+
+    Công việc chi tiết theo tuần:
+
+        Tuần 1: Setup project Node.js (Express.js). Thiết kế và tạo các bảng trong database MySQL dựa trên sơ đồ ERD.
+
+        Tuần 2: Nhiệm vụ cốt lõi: Xây dựng hoàn chỉnh API Authentication (Đăng ký, Đăng nhập, mã hóa mật khẩu, tạo JWT).
+
+        Tuần 3-3.5: Nhiệm vụ cốt lõi: Xây dựng toàn bộ API CRUD cho Sản phẩm và Đơn hàng. Xây dựng middleware để bảo vệ các route cho admin.
+
+        Tuần 4-7: Hỗ trợ Frontend team tích hợp API, sửa lỗi API nếu có. Tối ưu hóa các câu lệnh truy vấn database.
+
+        Tuần 8: Phối hợp với Team Lead để deploy backend. Đảm bảo server hoạt động ổn định trên môi trường thật.
+
+    Kỹ năng cần thiết: Node.js, Express.js, MySQL, thiết kế REST API, kiến thức về bảo mật (bcrypt, JWT).
+
+    Công cụ: VS Code, Postman/Insomnia (để test API), MySQL Workbench.
+
+3. Vai trò: Frontend Lead Developer
+
+Người này chịu trách nhiệm biến các thiết kế thành một trang web sống động và mượt mà.
+
+    Nhiệm vụ chính:
+
+        Xây dựng cấu trúc thư mục cho dự án React.js.
+
+        Tạo các components có thể tái sử dụng (Button, Card, Input...).
+
+        Xây dựng giao diện cho tất cả các trang người dùng (Trang chủ, Sản phẩm, Giỏ hàng, Thanh toán...).
+
+        Quản lý trạng thái của ứng dụng (ví dụ: thông tin người dùng đăng nhập, các sản phẩm trong giỏ hàng).
+
+    Công việc chi tiết theo tuần:
+
+        Tuần 1: Setup project React.js (Vite), cài đặt Tailwind CSS, React Router.
+
+        Tuần 4: Nhiệm vụ cốt lõi: Dựng layout chính (Header, Footer) và các trang tĩnh (Đăng nhập, Đăng ký). Cấu hình routing cho toàn bộ website.
+
+        Tuần 5: Nhiệm vụ cốt lõi: Xây dựng Trang danh sách sản phẩm và Trang chi tiết sản phẩm. Xây dựng chức năng giỏ hàng (Cart Context/State).
+
+        Tuần 6: Xây dựng Trang thanh toán (Checkout) và Trang lịch sử đơn hàng, thông tin cá nhân.
+
+        Tuần 7: Xây dựng giao diện cho các trang quản trị (Admin Dashboard): Quản lý sản phẩm, Quản lý đơn hàng.
+
+        Tuần 8: Cùng team sửa các lỗi giao diện cuối cùng, tối ưu responsive.
+
+    Kỹ năng cần thiết: React.js (Hooks, Context API), HTML/CSS, Tailwind CSS, Javascript (ES6+), làm việc với API (Axios).
+
+    Công cụ: VS Code, React Dev Tools (trên trình duyệt).
+
+4. Vai trò: UI/UX Designer & QA Tester
+
+Vai trò này đảm bảo sản phẩm vừa đẹp, dễ sử dụng, vừa chạy đúng chức năng và không có lỗi.
+
+    Nhiệm vụ chính:
+
+        Giai đoạn đầu: Thiết kế giao diện người dùng (UI) và trải nghiệm người dùng (UX) cho website.
+
+        Giai đoạn sau: Kiểm thử (test) toàn bộ các chức năng, tìm lỗi (bug) và báo cáo cho team.
+
+        Viết tài liệu hướng dẫn sử dụng và chuẩn bị slide thuyết trình.
+
+    Công việc chi tiết theo tuần:
+
+        Tuần 1: Nhiệm vụ cốt lõi: Sử dụng Figma (hoặc công cụ tương tự) để vẽ wireframe và mockup cho các trang chính đã nêu trong kế hoạch. Chọn màu sắc, font chữ.
+
+        Tuần 2-4: Hoàn thiện thiết kế chi tiết. Chuẩn bị các tài nguyên (icon, ảnh) cho Frontend team. Bắt đầu viết các kịch bản kiểm thử (Test Cases).
+
+        Tuần 5-6: Nhiệm vụ cốt lõi: Bắt đầu kiểm thử các luồng chức năng của người dùng (mua sắm, thanh toán). Test trên nhiều trình duyệt và kích thước màn hình (responsive).
+
+        Tuần 7: Kiểm thử kỹ lưỡng các chức năng của trang Admin. Ghi nhận lại các lỗi và báo cáo chi tiết (lỗi gì, cách tái hiện, ảnh chụp màn hình).
+
+        Tuần 8: Kiểm thử lần cuối trên môi trường đã deploy. Viết tài liệu hướng dẫn sử dụng, hoàn thiện báo cáo và slide thuyết trình.
+
+    Kỹ năng cần thiết: Sử dụng công cụ thiết kế (Figma), tư duy logic, tỉ mỉ, cẩn thận, khả năng viết báo cáo rõ ràng.
+
+    Công cụ: Figma, Trello (để báo cáo bug), các trình duyệt web khác nhau (Chrome, Firefox).
